@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>DIGITF</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="./assets/plugins/bootstrap-icons-1.11.1/bootstrap-icons-1.11.1/bootstrap-icons.css"
+    />
+    <!-- bootstrap main library -->
+    <link
+      rel="stylesheet"
+      href="./assets/plugins/bootstrap-5.3.2-dist/css/bootstrap.min.css"
+    />
+    <!-- main styleSheet -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./assets/css/main.css"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary p-3 position-fixed z-2 left-0 top-0 w-100"
+      id="navBar"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand fs-4 fw-bold" href="index.html">DIGITF</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="toggle-icon"> <i class="bi bi-list fs-1"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div
+            class="second-container d-lg-flex justify-content-between align-items-center w-100 text-uppercase"
+          >
+            <ul class="navbar-nav ms-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link active px-2"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#about-us">about</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#categories">shop</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#furniture">furniture</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#contact-us">contact us</a>
+              </li>
+            </ul>
+            <ul
+              class="navbar-nav second-ul d-lg-flex ms-3 justify-content-between w-40"
+            >
+              <li class="nav-item p-2">
+                <button
+                  type="button"
+                  class="btn btn-primary p-0 text-uppercase text-light bg-transparent border-0"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <i class="bi bi-person-fill"></i> Login
+                </button>
+              </li>
+              <li class="nav-item p-2">
+                <button class="bg-transparent p-0 border-0">
+                  <i class="bi bi-search px-lg-3 text-light" id="search"></i>
+                  <input
+                    placeholder="Search..."
+                    type="text"
+                    id="search-input"
+                    class="bg-transparent border-0 border-bottom"
+                  />
+                </button>
+              </li>
+              <li class="nav-item dropdown px-lg-3 position-relative">
+                <button
+                  class="btn btn-secondary p-0 m-0 bg-transparent border-0 text-dark"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-list fs-2 text-light"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item p-2 px-3" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item second p-2 px-3" href="#"
+                      >Another action</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item p-2 px-3" href="#"
+                      >Something else here</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <form action="">
+          <div class="modal-content p-4">
+            <div class="modal-header-cus d-block">
+              <h1
+                class="modal-title fs-2 text-uppercase text-light text-center mb-4 fw-bold"
+                id="exampleModalLabel"
+              >
+                login
+              </h1>
+            </div>
+            <div
+              class="modal-body-cus d-flex justify-content-between align-items-center flex-column"
+            >
+              <input
+                type="email"
+                placeholder="Email.."
+                class="p-2 border-bottom border-top-0 border-start-0 border-end-0 bg-transparent text-light"
+              />
+              <input
+                type="password"
+                class="p-2 border-bottom border-top-0 border-start-0 border-end-0 bg-transparent text-light"
+                placeholder="Password"
+              />
+            </div>
+            <div
+              class="modal-footer-cus mt-4 d-flex justify-content-center align-items-center"
+            >
+              <button
+                type="submit"
+                class="btn login-btn py-2 px-5 fs-5 rounded-pill"
+              >
+                Sign in
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <header id="furniture">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="slide active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            class="slide"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            class="slide"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            class="slide"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner text-center text-md-start">
+          <div class="carousel-item active">
+            <div class="svg z-1 d-none d-md-block">
+              <div class="shape">
+                <div class="chair">
+                  <img src="./assets/image/chair .png" alt="hello world" />
+                </div>
+                <span class="slider-number text-light fs-2">01</span>
+              </div>
+              <div
+                class="play z-1 d-flex align-items-center justify-content-center fs-1 rounded-circle overflow-auto"
+              >
+                <i class="bi bi-play-fill"></i>
+              </div>
+            </div>
+            <div class="container main-heading content">
+              <div class="row">
+                <div class="col-md-5 pt-5 pb-5 z-2">
+                  <p class="header-p text-uppercase mb-0 fs-1">the latest</p>
+                  <h1 class="main-header text-uppercase fw-normal">
+                    furniture
+                  </h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Cupiditate dolore assumenda quod, cum autem quos impedit
+                    ipsam? Ea asperiores quia consectetur quae in molestias
+                    molestiae error repudiandae, esse nam optio.
+                  </p>
+                  <button
+                    class="read-more btn rounded-pill text-uppercase text-light ps-3 pe-3 m-1 ms-md-0"
+                  >
+                    read more
+                  </button>
+                  <button
+                    class="contact-us btn rounded-pill text-uppercase text-light ps-3 pe-3 m-1"
+                  >
+                    contact us
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="svg z-1 d-none d-md-block">
+              <div class="shape">
+                <div class="chair">
+                  <img src="./assets/image/chair .png" alt="hello world" />
+                </div>
+                <span class="slider-number text-light fs-2">02</span>
+              </div>
+              <div
+                class="play z-1 d-flex align-items-center justify-content-center fs-2 rounded-circle overflow-auto"
+              >
+                <i class="bi bi-play-fill"></i>
+              </div>
+            </div>
+            <div class="container main-heading content">
+              <div class="row">
+                <div class="col-md-5 pt-5 pb-5 z-2">
+                  <p class="header-p text-uppercase mb-0 fs-1">the latest</p>
+                  <h1 class="main-header text-uppercase fw-normal">
+                    furniture
+                  </h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Cupiditate dolore assumenda quod, cum autem quos impedit
+                    ipsam? Ea asperiores quia consectetur quae in molestias
+                    molestiae error repudiandae, esse nam optio.
+                  </p>
+                  <button
+                    class="read-more btn rounded-pill text-uppercase text-light ps-3 pe-3 m-1 ms-md-0"
+                  >
+                    read more
+                  </button>
+                  <button
+                    class="contact-us btn rounded-pill text-uppercase text-light ps-3 pe-3 m-1"
+                  >
+                    contact us
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="svg z-1 d-none d-md-block">
+              <div class="shape">
+                <div class="chair">
+                  <img src="./assets/image/chair .png" alt="hello world" />
+                </div>
+                <span class="slider-number text-light fs-2">03</span>
+              </div>
+              <div
+                class="play z-1 d-flex align-items-center justify-content-center fs-2 rounded-circle overflow-auto"
+              >
+                <i class="bi bi-play-fill"></i>
+              </div>
+            </div>
+            <div class="container main-heading content">
+              <div class="row">
+                <div class="col-md-5 pt-5 pb-5 z-2">
+                  <p class="header-p text-uppercase mb-0 fs-1">the latest</p>
+                  <h1 class="main-header text-uppercase fw-normal">
+                    furniture
+                  </h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Cupiditate dolore assumenda quod, cum autem quos impedit
+                    ipsam? Ea asperiores quia consectetur quae in molestias
+                    molestiae error repudiandae, esse nam optio.
+                  </p>
+                  <button
+                    class="read-more btn rounded-pill text-uppercase text-light ps-3 pe-3 m-1 ms-md-0"
+                  >
+                    read more
+                  </button>
+                  <button
+                    class="contact-us btn rounded-pill text-uppercase text-light ps-3 pe-3 m-1"
+                  >
+                    contact us
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="svg z-1 d-none d-md-block">
+              <div class="shape">
+                <div class="chair">
+                  <img src="./assets/image/chair .png" alt="hello world" />
+                </div>
+                <span class="slider-number text-light fs-2">04</span>
+              </div>
+              <div
+                class="play z-1 d-flex align-items-center justify-content-center fs-1 rounded-circle overflow-auto"
+              >
+                <i class="bi bi-play-fill"></i>
+              </div>
+            </div>
+            <div class="ccontainer main-heading content">
+              <div class="row">
+                <div class="col-md-5 pt-5 pb-5 z-2">
+                  <p class="header-p text-uppercase mb-0 fs-1">the latest</p>
+                  <h1 class="main-header text-uppercase fw-normal">
+                    furniture
+                  </h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Cupiditate dolore assumenda quod, cum autem quos impedit
+                    ipsam? Ea asperiores quia consectetur quae in molestias
+                    molestiae error repudiandae, esse nam optio.
+                  </p>
+                  <button
+                    class="read-more btn rounded-pill text-uppercase text-light ps-3 pe-3 m-1 ms-md-0"
+                  >
+                    read more
+                  </button>
+                  <button
+                    class="contact-us btn rounded-pill text-uppercase text-light ps-3 pe-3 m-1"
+                  >
+                    contact us
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section
+      class="about-us overflow-y-hidden overflow-x-hidden overflow-x-sm-visible"
+      id="about-us"
+    >
+      <div class="container main-heading">
+        <div class="row align-items-center">
+          <div class="col-md-5 col-lg-6 text-center text-md-start">
+            <h2 class="section-title text-capitalize w-100 fs-1">about us</h2>
+            <span class="line mt-4 mt-md-0"></span>
+            <p class="my-5">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
+              nisi deserunt iure quis placeat cum necessitatibus tenetur magnam
+              error beatae iusto ab quae deleniti laudantium consequuntur
+              tempora ducimus ex ipsami
+            </p>
+            <button
+              class="read-more btn rounded-pill text-capitalize text-light ps-3 pe-3 m-1 ms-md-0"
+            >
+              read more
+            </button>
+          </div>
+          <div
+            class="col-md-7 col-lg-6 d-flex justify-content-center align-items-center position-relative mt-4 mt-lg-0"
+          >
+            <div
+              class="img-container d-flex justify-content-center align-items-center position-relative"
+            >
+              <img src="./assets/image/aboutUs.png" alt="hello world" />
+              <span
+                class="circle circle1 d-flex justify-content-center align-items-center"
+                >01</span
+              >
+              <span class="circle circle2"></span>
+              <span class="circle circle3"></span>
+              <span class="circle circle4"></span>
+              <span class="circle circle5"></span>
+              <span class="circle circle6"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="categories" id="categories">
+      <div class="container main-heading">
+        <div class="row align-items-center">
+          <div class="text-center text-md-start w-100">
+            <h2 class="section-title text-capitalize w-100 fs-1">
+              Trending Categories
+            </h2>
+            <span class="line mt-4 mt-md-0"></span>
+          </div>
+          <div class="col-md-5 col-12">
+            <ul
+              class="nav nav-tabs py-5 border-0 col-6 col-md-12 text-center text-md-start w-100"
+              id="myTab"
+              role="tablist"
+            >
+              <li class="nav-item my-5 col-6 col-md-12" role="presentation">
+                <span class="num fs-5">01</span>
+                <span
+                  class="tab-line d-none d-md-inline-block mb-1 mx-2"
+                ></span>
+                <button
+                  class="nav-link active btn tab-btn d-inline-block p-0 fs-4 fw-medium ms-md-4 ms-2 bg-transparent mb-2 text-capitalize"
+                  id="chairs-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#chairs-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="chairs-tab-pane"
+                  aria-selected="true"
+                >
+                  chairs
+                </button>
+              </li>
+              <li class="nav-item my-5 col-6 col-md-12" role="presentation">
+                <span class="num fs-5">02</span>
+                <span
+                  class="tab-line d-none d-md-inline-block mb-1 mx-2"
+                ></span>
+                <button
+                  class="nav-link btn tab-btn d-inline-block p-0 fs-4 fw-medium ms-md-4 ms-2 bg-transparent mb-2 text-capitalize"
+                  id="tables-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tables-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="tables-tab-pane"
+                  aria-selected="false"
+                >
+                  tables
+                </button>
+              </li>
+              <li class="nav-item my-5 col-6 col-md-12" role="presentation">
+                <span class="num fs-5">03</span>
+                <span
+                  class="tab-line d-none d-md-inline-block mb-1 mx-2"
+                ></span>
+                <button
+                  class="nav-link btn tab-btn d-inline-block p-0 fs-4 fw-medium ms-md-4 ms-2 bg-transparent mb-2 text-capitalize"
+                  id="bads-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#bads-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="bads-tab-pane"
+                  aria-selected="false"
+                >
+                  bads
+                </button>
+              </li>
+              <li class="nav-item my-5 col-6 col-md-12" role="presentation">
+                <span class="num fs-5">03</span>
+                <span
+                  class="tab-line d-none d-md-inline-block mb-1 mx-2"
+                ></span>
+                <button
+                  class="nav-link btn tab-btn d-inline-block p-0 fs-4 fw-medium ms-md-4 ms-2 bg-transparent mb-2 text-capitalize"
+                  id="furniture-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#furniture-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="furniture-tab-pane"
+                  aria-selected="false"
+                >
+                  furnitures
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-7 d-flex justify-content-center">
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="chairs-tab-pane"
+                role="tabpanel"
+                aria-labelledby="chairs-tab"
+                tabindex="0"
+              >
+                <div class="row move">
+                  <div class="col-6 mt-5">
+                    <div class="pt-3">
+                      <img
+                        src="./assets/image/chair1.png"
+                        class="w-100"
+                        alt="hello world"
+                      />
+                    </div>
+                    <div class="pt-3">
+                      <img
+                        src="./assets/image/chair3.png"
+                        class="w-100"
+                        alt="hello world"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="pt-3">
+                      <img
+                        src="./assets/image/chair2.png"
+                        class="w-100"
+                        alt="hello world"
+                      />
+                    </div>
+                    <div class="pt-3">
+                      <img
+                        src="./assets/image/chair4.png"
+                        class="w-100"
+                        alt="hello world"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="tables-tab-pane"
+                role="tabpanel"
+                aria-labelledby="tables-tab"
+                tabindex="0"
+              >
+                <div class="row move">
+                  <div class="col-6 mt-5">
+                    <div class="pt-3">
+                      <img
+                        src="./assets/image/chair1.png"
+                        class="w-100"
+                        alt="hello world"
+                      />
+                    </div>
+                    <div class="pt-3">
+                      <img
+                        src="./assets/image/chair3.png"
+                        class="w-100"
+                        alt="hello world"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="pt-3">
+                      <img
+                        src="./assets/image/chair2.png"
+                        class="w-100"
+                        alt="hello world"
+                      />
+                    </div>
+                    <div class="pt-3">
+                      <img
+                        src="./assets/image/chair4.png"
+                        class="w-100"
+                        alt="hello world"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="bads-tab-pane"
+                role="tabpanel"
+                aria-labelledby="bads-tab"
+                tabindex="0"
+              >
+                <div class="row move">
+                  <div class="col-6 mt-5">
+                    <div class="pt-3">
+                      <img
+                        src="./assets/image/chair1.png"
+                        class="w-100"
+                        alt="hello world"
+                      />
+                    </div>
+                    <div class="pt-3">
+                      <img
+                        src="./assets/image/chair3.png"
+                        class="w-100"
+                        alt="hello world"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="pt-3">
+                      <img
+                        src="./assets/image/chair2.png"
+                        class="w-100"
+                        alt="hello world"
+                      />
+                    </div>
+                    <div class="pt-3">
+                      <img
+                        src="./assets/image/chair4.png"
+                        class="w-100"
+                        alt="hello world"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="furniture-tab-pane"
+                role="tabpanel"
+                aria-labelledby="furniture-tab"
+                tabindex="0"
+              >
+                <div class="row move">
+                  <div class="col-6 mt-5">
+                    <div class="pt-3">
+                      <img
+                        src="./assets/image/chair1.png"
+                        class="w-100"
+                        alt="hello world"
+                      />
+                    </div>
+                    <div class="pt-3">
+                      <img
+                        src="./assets/image/chair3.png"
+                        class="w-100"
+                        alt="hello world"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="pt-3">
+                      <img
+                        src="./assets/image/chair2.png"
+                        class="w-100"
+                        alt="hello world"
+                      />
+                    </div>
+                    <div class="pt-3">
+                      <img
+                        src="./assets/image/chair4.png"
+                        class="w-100"
+                        alt="hello world"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="latest-collection overflow-y-hidden overflow-x-hidden overflow-x-sm-visible"
+    >
+      <div class="container main-heading">
+        <div class="row align-items-center">
+          <div class="col-md-6 align-items-center">
+            <h2
+              class="text-center text-md-start fs-1 w-100 ms-md-4 text-capitalize"
+            >
+              the latest collection
+            </h2>
+            <p class="discount text-uppercase text-center fs-2 text-md-start">
+              50% discount
+            </p>
+            <div class="button w-100 text-center text-md-start ms-md-5 mb-5">
+              <button
+                class="btn buy-now rounded-pill text-center px-4 py-2 text-capitalize"
+              >
+                buy now
+              </button>
+            </div>
+          </div>
+          <div
+            class="col-md-6 d-flex justify-content-center align-items-center mt-4 mt-lg-0"
+          >
+            <div
+              class="img-container d-flex justify-content-center align-items-center position-relative"
+            >
+              <span class="circle circle1"></span>
+              <span class="circle circle2"></span>
+              <span class="circle circle3"></span>
+              <span class="circle circle4"></span>
+              <span class="circle circle5"></span>
+              <span class="circle circle6"></span>
+              <div>
+                <img src="./assets/image/img3.png" alt="hello world" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-brands">
+      <div class="container text-center text-md-start main-heading">
+        <div class="text-center text-md-start w-100 mb-5 pb-md-5">
+          <h2 class="section-title text-capitalize w-100 fs-1">
+            featured brands
+          </h2>
+          <span class="line mt-4 mt-md-0"></span>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 px-3 text-center">
+            <div class="brand new px-3 pt-5 position-relative">
+              <div class="mt-5">
+                <img
+                  class="w-75"
+                  src="./assets/image/chair .png"
+                  alt="hello world"
+                />
+              </div>
+              <span class="price fs-4 fw-medium">$100</span>
+              <p class="fs-4 fw-medium">chair</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 px-3 text-center">
+            <div class="brand px-3 pt-5">
+              <div class="mt-5">
+                <img
+                  class="w-75"
+                  src="./assets/image/chair .png"
+                  alt="hello world"
+                />
+              </div>
+              <span class="price fs-4 fw-medium">$100</span>
+              <p class="fs-4 fw-medium">chair</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 px-3 text-center">
+            <div class="brand px-3 pt-5">
+              <div class="mt-5">
+                <img
+                  class="w-75"
+                  src="./assets/image/chair .png"
+                  alt="hello world"
+                />
+              </div>
+              <span class="price fs-4 fw-medium">$100</span>
+              <p class="fs-4 fw-medium">chair</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 px-3 text-center">
+            <div class="brand px-3 pt-5">
+              <div class="mt-5">
+                <img
+                  class="w-75"
+                  src="./assets/image/chair .png"
+                  alt="hello world"
+                />
+              </div>
+              <span class="price fs-4 fw-medium">$100</span>
+              <p class="fs-4 fw-medium">chair</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="see-more btn rounded-pill text-uppercase ps-3 pe-3 m-1 mt-5"
+        >
+          see more
+        </button>
+      </div>
+    </section>
+    <section class="contact-us-sect" id="contact-us">
+      <div class="container text-center text-md-start main-heading">
+        <div class="text-center text-md-start w-100 mb-5 pb-md-5">
+          <h2 class="section-title text-capitalize w-100 fs-1">contact us</h2>
+          <span class="line mt-4 mt-md-0"></span>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <form
+              action="
+              "
+            >
+              <div class="mb-4">
+                <input
+                  type="text"
+                  class="w-100 bg-white border-0 p-3"
+                  placeholder="Name"
+                />
+                <span class="erroe-msg"></span>
+              </div>
+              <div class="mb-4">
+                <input
+                  type="email"
+                  class="w-100 bg-white border-0 p-3"
+                  placeholder="Email"
+                />
+                <span class="erroe-msg"></span>
+              </div>
+              <div class="mb-4">
+                <input
+                  type="text"
+                  class="w-100 bg-white border-0 p-3"
+                  placeholder="Number"
+                />
+                <span class="erroe-msg"></span>
+              </div>
+              <div class="mb-4">
+                <textarea
+                  class="w-100 bg-white border-0 py-5 px-3"
+                  placeholder="Message"
+                ></textarea>
+                <span class="erroe-msg"></span>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <img src="./assets/image/map.png" alt="hello world" class="w-100" />
+          </div>
+        </div>
+        <button
+          class="read-more btn rounded-pill text-uppercase text-light ps-5 pe-5 fs-5 m-1 ms-md-0 mt-5"
+          type="submit"
+        >
+          send
+        </button>
+      </div>
+    </section>
+    <section class="testimonial">
+      <div class="container main-heading">
+        <div class="text-center text-md-start w-100 mb-5 pb-md-5">
+          <h2 class="section-title text-capitalize w-100 fs-1">testimonial</h2>
+          <span class="line mt-4 mt-md-0"></span>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <div class="card p-5 py-4 border-0">
+              <div class="card-body">
+                <div
+                  class="row flex-nowrap flex-column flex-md-row align-items-center mb-4 justify-content-between"
+                >
+                  <div class="profile col-4 p-0 mb-3">
+                    <img
+                      src="./assets/image/person1.png"
+                      class="w-100 h-100"
+                      alt="hello world"
+                    />
+                  </div>
+                  <div class="info col-7 p-0 align-items-center text-center">
+                    <h3 class="name fs-5 fw-bold">Manga</h3>
+                    <p class="job">Consectetur adipiscing</p>
+                  </div>
+                </div>
+                <p class="card-text text-center text-md-start">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam nobis voluptatum, eligendi laborum labore sunt harum
+                  perspiciatis minima quidem quisquam eaque amet animi vel
+                  impedit ullam itaque soluta ipsa accusamus?
+                </p>
+                <a href="#" class="arrow"
+                  ><i class="bi bi-arrow-left fs-3 fw-bold"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card p-5 py-4 border-0">
+              <div class="card-body">
+                <div
+                  class="row flex-column flex-md-row flex-nowrap align-items-center mb-4 justify-content-between"
+                >
+                  <div class="profile col-4 p-0 mb-3">
+                    <img
+                      src="./assets/image/person2.png"
+                      class="w-100 h-100"
+                      alt="hello world"
+                    />
+                  </div>
+                  <div class="info col-7 p-0 align-items-center text-center">
+                    <h3 class="name fs-5 fw-bold">Manga</h3>
+                    <p class="job">Consectetur adipiscing</p>
+                  </div>
+                </div>
+                <p class="card-text text-center text-md-start">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam nobis voluptatum, eligendi laborum labore sunt harum
+                  perspiciatis minima quidem quisquam eaque amet animi vel
+                  impedit ullam itaque soluta ipsa accusamus?
+                </p>
+                <a href="#" class="arrow"
+                  ><i class="bi bi-arrow-left fs-3 fw-bold"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container main-heading">
+        <div class="text-center mb-4">
+          <h2 class="text-light text-uppercase fw-bold fs-1 mb-3">digitf</h2>
+          <span class="line-footer d-inline-block"></span>
+        </div>
+        <div class="row text-center text-md-start">
+          <div class="col-md-5 col-lg-3 mb-5">
+            <h3 class="text-capitalize text-light mb-5">about us</h3>
+            <ul class="text-light">
+              <li>
+                <i class="bi bi-geo-alt-fill me-2"></i>
+                <p class="d-inline-block text-capitalize">address</p>
+              </li>
+              <li>
+                <i class="bi bi-phone me-2"></i>
+                <p class="d-inline-block text-capitalize">+01 1234567890</p>
+              </li>
+              <li>
+                <i class="bi bi-envelope-fill me-2"></i>
+                <p class="d-inline-block text-capitalize">demo@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+          <div class="d-md-block d-none d-lg-none col-md-2"></div>
+          <div class="col-md-5 col-lg-3 mb-5">
+            <h3 class="text-capitalize text-light mb-5">information</h3>
+            <p class="text-light">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit
+              sequi saep e exercitationem veritatis voluptatibus, magni
+              laboriosam. Aliquam illo, tempora provident aliquid quam expedita
+              porro ipsum hic, explicabo ea, itaque placeat
+            </p>
+          </div>
+
+          <div class="col-md-5 col-lg-3 mb-5">
+            <h3 class="text-capitalize text-light mb-4">instagram</h3>
+            <div class="row justify-content-sm-start">
+              <div
+                class="col-6 d-flex justify-content-md-start justify-content-center align-items-center p-2"
+              >
+                <div class="w-75">
+                  <img
+                    src="./assets/image/img2.png"
+                    alt="hello world"
+                    class="w-100 h-100"
+                  />
+                </div>
+              </div>
+              <div
+                class="col-6 d-flex justify-content-md-start justify-content-center align-items-center p-2"
+              >
+                <div class="w-75">
+                  <img
+                    src="./assets/image/img2.png"
+                    alt="hello world"
+                    class="w-100 h-100"
+                  />
+                </div>
+              </div>
+              <div
+                class="col-6 d-flex justify-content-md-start justify-content-center align-items-center p-2"
+              >
+                <div class="w-75">
+                  <img
+                    src="./assets/image/img2.png"
+                    alt="hello world"
+                    class="w-100 h-100"
+                  />
+                </div>
+              </div>
+              <div
+                class="col-6 d-flex justify-content-md-start justify-content-center align-items-center p-2"
+              >
+                <div class="w-75">
+                  <img
+                    src="./assets/image/img2.png"
+                    alt="hello world"
+                    class="w-100 h-100"
+                  />
+                </div>
+              </div>
+              <div
+                class="col-6 d-flex justify-content-md-start justify-content-center align-items-center p-2"
+              >
+                <div class="w-75">
+                  <img
+                    src="./assets/image/img2.png"
+                    alt="hello world"
+                    class="w-100 h-100"
+                  />
+                </div>
+              </div>
+              <div
+                class="col-6 d-flex justify-content-md-start justify-content-center align-items-center p-2"
+              >
+                <div class="w-75">
+                  <img
+                    src="./assets/image/img2.png"
+                    alt="hello world"
+                    class="w-100 h-100"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-md-block d-none d-lg-none col-md-2"></div>
+          <div class="col-md-5 col-lg-3">
+            <h3 class="text-capitalize text-light mb-4">newsletter</h3>
+            <form action="">
+              <input
+                type="text"
+                placeholder="Enter your email"
+                class="p-3 py-1 w-100 fs-5 mb-2"
+              />
+              <button
+                type="submit"
+                class="px-4 py-2 text-light mt-3 text-uppercase"
+              >
+                subscribe
+              </button>
+            </form>
+            <ul
+              class="text-light py-3 d-flex justify-content-center justify-content-md-start"
+            >
+              <li class="list-link">
+                <i class="bi bi-facebook fs-3 pe-3"></i>
+              </li>
+              <li class="list-link"><i class="bi bi-twitter fs-3 px-3"></i></li>
+              <li class="list-link">
+                <i class="bi bi-linkedin fs-3 px-3"></i>
+              </li>
+              <li class="list-link"><i class="bi bi-youtube fs-3 px-3"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white py-3 text-center text-capitalize">
+        <p class="text-dark m-0">
+          © 2019 All Rights Reserved. Free html Templates
+        </p>
+      </div>
+    </footer>
+    <script src="./assets/plugins/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
